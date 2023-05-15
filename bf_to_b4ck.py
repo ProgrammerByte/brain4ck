@@ -1,0 +1,13 @@
+import sys
+program = open(str(sys.argv[1]), 'rb').read().decode("utf-8")
+output = open(str(sys.argv[2]), 'w')
+program = program.replace(".", "1")
+program = program.replace("+", "6")
+program = program.replace("-", "7")
+program = program.replace(">", "2")
+program = program.replace("<", "3")
+program = program.replace("[", "4")
+program = program.replace("]", "5")
+program = program.replace(",", "0")
+output.write(program)
+output.close()
