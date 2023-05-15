@@ -41,10 +41,7 @@ while i < len(program):
             op = resolve(values[int(c)])
 
     if op == 0:
-        values[value_ptr] -= cells[ptr]
         cells[ptr] = int(input("\n"))
-        values[value_ptr] += cells[ptr]
-        values[value_ptr] = resolve(values[value_ptr])
     elif op == 1:
         print(chr(cells[ptr]), end="")
     elif op == 2:
