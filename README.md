@@ -1,5 +1,7 @@
 # Welcome to the Painful World of Brain4ck
 A cursed language based off of brainfuck, however all characters are numbers and are mutable.
+<br>
+<br>
 
 ## Idea and Syntax
 This is a brainfuck version of the ideas presented in the 69420 language which you can find here: https://github.com/ProgrammerByte/69420
@@ -27,12 +29,17 @@ Here's a more concrete example:
 In this program we take input from the user, store it in cell `0`, increment cell `0` by 1 which in turn changes the function of `0` to `1`, then we use `0` as `1` which outputs the contents of cell `0` as an ASCII character.
 
 If we instead incremented (or decremented) the contents of cell `0` by a multiple of 8 for example with `66666666` or `77777777`, then `0` will still function as output instead of input.
+<br>
+<br>
+<br>
+
 
 ## The "Hello World" program
 Here is a Brain4ck "Hello World" program
 ```
 2666666664366666666627531266664366666662753616666666116661226666663333333366336222222222222222226666666666666666666666666666666612222222266666666436666666662753666666666666666177777777777777726666436666666275366666666666166617777771666777777777771
 ```
+<br>
 
 ## Usage of the Brain4ck interpreter
 You can run a Brain4ck program with:
@@ -44,6 +51,8 @@ For example you can test the hello world program with:
 ```
 py brain4ck.py hello_world.b4ck
 ```
+
+<br>
 
 ## Debug operator
 
@@ -64,8 +73,8 @@ A breakdown of this information follows:
 | Current value being altered | Which instruction would be changed if an increment operation were to occur (this is just the memory address modulo 8) |
 | Current instruction values | Shows which instruction is bound to what. For example `[1, 1, 2, 3, 4, 5, 6, 7]` shows that all instructions are unchanged, however instruction `0` is mapped onto instruction `1` |
 | Current memory address | Where the data pointer currently is in memory |
-| `Cell and neighbors view` | Shows the data in the cell pointed to by the data pointer, as well as immediate neighbors |
-
+| Cell and neighbors view | Shows the data in the cell pointed to by the data pointer, as well as immediate neighbors |
+<br>
 
 ## Usage of the converter
 
