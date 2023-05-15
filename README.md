@@ -87,3 +87,4 @@ The program comes with a sample program hello_world_bf.txt which you can transla
 ```
 py bf_to_b4ck.py hello_world_bf.txt hello_world.b4ck
 ```
+This only maps brainfuck characters onto Brain4ck ones and do not account for integer mutability, so a direct mapping will almost certainly not work as intended.
